@@ -1,0 +1,71 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "autoscaling:Describe*",
+                "cloudfront:ListDistributions",
+                "cloudwatch:Get*",
+                "cloudwatch:List*",
+                "config:DeliverConfigSnapshot",
+                "config:Describe*",
+                "config:GetComplianceDetailsByConfigRule",
+                "config:GetComplianceSummaryByConfigRule",
+                "ec2:Describe*",
+                "eks:Describe*",
+                "eks:List*",
+                "elasticache:Describe*",
+                "elasticache:List*",
+                "elasticloadbalancing:Describe*",
+                "elasticmapreduce:Describe*",
+                "elasticmapreduce:List*",
+                "guardduty:Describe*",
+                "guardduty:List*",
+                "iam:Get*",
+                "iam:List*",
+                "inspector2:Describe*",
+                "inspector2:List*",
+                "inspector:Describe*",
+                "inspector:List*",
+                "kinesis:Describe*",
+                "kinesis:List*",
+                "lambda:List*",
+                "logs:Describe*",
+                "logs:Get*",
+                "logs:List*",
+                "network-firewall:Describe*",
+                "network-firewall:List*",
+                "rds:Describe*",
+                "route53:List*",
+                "s3:GetAccelerateConfiguration",
+                "s3:GetBucketCORS",
+                "s3:GetBucketLocation",
+                "s3:GetBucketLogging",
+                "s3:GetBucketTagging",
+                "s3:GetLifecycleConfiguration",
+                "s3:List*",
+                "sns:List*",
+                "sqs:List*",
+                "tag:GetResources",
+                "waf:List*",
+                "wafv2:List*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::<your-org-name>-billing-reports",
+                "arn:aws:s3:::<your-org-name>-trails",
+                "arn:aws:s3:::<your-org-name>-config"
+            ]
+        }
+    ]
+}
