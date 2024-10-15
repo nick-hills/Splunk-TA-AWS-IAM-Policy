@@ -1,0 +1,1 @@
+# Splunk-TA-AWS-IAM-Policy
